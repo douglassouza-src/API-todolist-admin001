@@ -1,5 +1,5 @@
 {
-  "name": "api-todolist",
+  "name": "API-Recados",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
@@ -7,13 +7,23 @@
     "@types/cors": "^2.8.13",
     "@types/express": "^4.17.17",
     "@types/node": "^18.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint": "^8.0.1",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^34.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-import-helpers": "^1.3.1",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.0.0",
+    "prettier": "^2.8.4",
     "ts-node-dev": "^2.0.0",
-    "typescript": "^5.0.4"
+    "typescript": "*"
   },
   "scripts": {
     "start": "node ./dist/server.js",
-    "build": "yarn tsc",
-    "dev": "ts-node-dev --transpile-only src/server.ts"
+    "build": "npx tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
   },
   "dependencies": {
     "cors": "^2.8.5",
