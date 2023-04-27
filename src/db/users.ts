@@ -1,7 +1,7 @@
 import fs from 'fs'
 import { User } from '../models/user'
 
-// eslint-disable-next-line n/no-path-concat
+
 const local = 'db.json'
 
 export function buscarUsuariosDB (): User[] {
